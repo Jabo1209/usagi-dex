@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>我的收藏圖鑑</title>
+  <meta name="theme-color" content="#dac7b7" />
+  <style>
+    :root { --brand: #dac7b7; }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; width: 100%;
+      overflow-x: hidden;
+      font-family: "Segoe UI", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif;
+      background: #fdefc8; color: #333; text-align: center;
+    }
+
+    .top-bar {
+      background: var(--brand); color: #fff;
+      padding: 12px 0; position: fixed; top: 0; left: 0; width: 100%;
+      z-index: 1001; user-select: none; font-weight: bold; font-size: 16px;
+    }
+
+    .logo-container { margin-top: 70px; }
+    .logo-container img { width: min(92%, 460px); aspect-ratio: 16 / 9; object-fit: cover; border-radius: 16px; }
+    h1 { margin: 6px 0 2px; font-size: 16px; color: #a49393; }
+    .subtitle { margin: 0 0 4px; font-size: 12px; color: #b9adad; }
+
+    /* 角色分頁列 */
+    .tabs {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 6px; max-width: 900px; margin: 14px auto 4px; padding: 0 8px;
+    }
+    .tab-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      border: 2px solid #e5ddd5; border-radius: 20px;
+      background: #fff; color: #555; padding: 6px 12px;
+      font-size: 14px; cursor: pointer; transition: .15s;
+    }
+    .tab-btn img { width: 22px; height: 22px; border-radius: 50%; }
+    .tab-btn .count { font-size: 12px; color: #aaa; }
+    .tab-btn.active { color: #fff; border-color: transparent; }
+
+    /* 類型快速跳轉列 */
+    .type-nav {
+      position: sticky; top: 44px; z-index: 900;
+      background: #fdefc8; box-shadow: 0 2px 5px rgba(0,0,0,.05);
+      display: flex; gap: 4px; overflow-x: auto; padding: 8px 12px;
+      scrollbar-width: none; justify-content: center;
+    }
+    .type-nav::-webkit-scrollbar { display: none; }
+    .type-nav a {
+      flex-shrink: 0; text-decoration: none; color: #555;
+      font-size: 13px; padding: 4px 10px; border-radius: 14px; background: #efe8e1;
+    }
+
+    .type-divider {
+      text-align: left; max-width: 900px; margin: 18px auto 6px; padding: 0 14px;
+      font-weight: bold; color: #7a6a62; font-size: 15px;
+      scroll-margin-top: 90px;
+    }
+
+    .group-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 10px; max-width: 900px; margin: 0 auto 10px; padding: 0 10px;
+    }
+    @media (max-width: 500px) {
+      .group-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+    }
+
+    .card {
+      position: relative; background: #fff; border: 2px solid #eee;
+      border-radius: 12px; padding: 8px 6px; cursor: pointer;
+      transition: transform .12s, box-shadow .12s; user-select: none;
+    }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,.06); }
+    .card img {
+      width: 100%; aspect-ratio: 1/1; object-fit: contain;
+      background: #f4f0ec; border-radius: 8px; display: block;
+    }
+    .card .name { margin-top: 6px; font-size: 13px; font-weight: 600; }
+    .card .size { font-size: 11px; color: #a99; }
+
+    .card.collected { border-color: var(--card-color, var(--brand)); }
+    .card .checkmark {
+      position: absolute; top: 6px; right: 6px; width: 22px; height: 22px;
+      border-radius: 50%; display: none; align-items: center; justify-content: center;
+      background: var(--card-color, var(--brand));
+    }
+    .card.collected .checkmark { display: flex; }
+    .card .checkmark svg { width: 13px; height: 13px; fill: #fff; }
+
+    .control-btn {
+      position: fixed; right: 12px; bottom: 16px; z-index: 999;
+      border: none; border-radius: 50%; width: 46px; height: 46px;
+      background: var(--brand); color: #fff; font-size: 18px;
+      cursor: pointer; box-shadow: 0 3px 8px rgba(0,0,0,.2);
+    }
+    #status { margin: 40px auto; color: #999; }
+    footer { margin: 30px 0 90px; font-size: 11px; color: #ccc; }
+  </style>
+</head>
+<body>
+  <div class="top-bar">我的收藏圖鑑</div>
+
+  <div class="logo-container"><img id="logo" alt="logo" /></div>
+  <h1 id="siteTitle"></h1>
+  <p class="subtitle" id="subtitle"></p>
+
+  <div class="tabs" id="tabs"></div>
+  <div class="type-nav" id="typeNav"></div>
+
+  <div id="status">載入中…</div>
+  <div id="content"></div>
+
+  <footer>資料與圖片皆放於本站 · GitHub Pages</footer>
+
+  <button class="control-btn" id="resetBtn" title="重設本頁勾選">↺</button>
+
+  <script>
+    const tabsEl    = document.getElementById("tabs");
+    const typeNavEl = document.getElementById("typeNav");
+    const contentEl = document.getElementById("content");
+    const statusEl  = document.getElementById("status");
+
+    let DATA = null;
+    let currentTab = null;
+
+    // ---- 收藏狀態（存在瀏覽器 localStorage）----
+    const keyOf = (tab) => "dex_collected_" + tab;
+    const getCollected = (tab) => JSON.parse(localStorage.getItem(keyOf(tab)) || "[]");
+    const setCollected = (tab, arr) => localStorage.setItem(keyOf(tab), JSON.stringify(arr));
+
+    // ---- 穩定的圖片載入：lazy + 重試 2 次 + 佔位圖 ----
+    function placeholder(text) {
+      const t = (text || "?").slice(0, 4);
+      const svg =
+        `<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'>` +
+        `<rect width='200' height='200' rx='16' fill='#eadfd6'/>` +
+        `<text x='100' y='96' font-size='20' text-anchor='middle' fill='#a99' font-family='Arial'>圖片</text>` +
+        `<text x='100' y='124' font-size='16' text-anchor='middle' fill='#a99' font-family='Arial'>載入失敗</text>` +
+        `</svg>`;
+      return "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+    }
+    function loadImage(imgEl, src, alt) {
+      imgEl.alt = alt || "";
+      imgEl.loading = "lazy";
+      imgEl.decoding = "async";
+      let tries = 0;
+      imgEl.onerror = () => {
+        tries++;
+        if (tries <= 2) {
+          const bust = (src.includes("?") ? "&" : "?") + "retry=" + tries;
+          setTimeout(() => { imgEl.src = src + bust; }, 500 * tries);
+        } else {
+          imgEl.onerror = null;
+          imgEl.src = placeholder(alt);
+        }
+      };
+      imgEl.src = src;
+    }
+
+    // ---- 渲染角色分頁列 ----
+    function renderTabs() {
+      tabsEl.innerHTML = "";
+      DATA.tabs.forEach((tab) => {
+        const total = tab.items.length;
+        const owned = getCollected(tab.name).length;
+        const btn = document.createElement("button");
+        btn.className = "tab-btn" + (tab.name === currentTab ? " active" : "");
+        if (tab.name === currentTab) btn.style.background = tab.color || "var(--brand)";
+        btn.innerHTML =
+          (tab.icon ? `<img alt="">` : "") +
+          `<span>${tab.name}</span><span class="count">${owned}/${total}</span>`;
+        if (tab.icon) loadImage(btn.querySelector("img"), tab.icon, tab.name);
+        btn.onclick = () => selectTab(tab.name);
+        tabsEl.appendChild(btn);
+      });
+    }
+
+    // ---- 渲染某分頁的卡片（依類型分組）----
+    function renderCards(tab) {
+      const color = tab.color || "#dac7b7";
+      document.documentElement.style.setProperty("--brand", color);
+
+      // 依類型分組，保留原始出現順序
+      const groups = {};
+      const order = [];
+      tab.items.forEach((it) => {
+        const t = it.type || "無類型";
+        if (!groups[t]) { groups[t] = []; order.push(t); }
+        groups[t].push(it);
+      });
+
+      const collected = getCollected(tab.name);
+
+      // 類型快速跳轉列
+      typeNavEl.innerHTML = "";
+      order.forEach((t) => {
+        const a = document.createElement("a");
+        a.href = "#type-" + encodeURIComponent(t);
+        a.textContent = t;
+        typeNavEl.appendChild(a);
+      });
+
+      contentEl.innerHTML = "";
+      order.forEach((t) => {
+        const owned = groups[t].filter((it) => collected.includes(t + "|" + it.name)).length;
+        const divider = document.createElement("div");
+        divider.className = "type-divider";
+        divider.id = "type-" + encodeURIComponent(t);
+        divider.textContent = `${t}（${owned}/${groups[t].length}）`;
+        contentEl.appendChild(divider);
+
+        const grid = document.createElement("div");
+        grid.className = "group-grid";
+        groups[t].forEach((it) => {
+          const itemKey = t + "|" + it.name;
+          const card = document.createElement("div");
+          card.className = "card" + (collected.includes(itemKey) ? " collected" : "");
+          card.style.setProperty("--card-color", color);
+          card.innerHTML =
+            `<div class="checkmark"><svg viewBox="0 0 16 16"><path d="M6 11.2L3.3 8.5l-1.4 1.4L6 14 14 6l-1.4-1.4z"/></svg></div>` +
+            `<img>` +
+            `<div class="name">${it.name}</div>` +
+            `<div class="size">${it.size || ""}</div>`;
+          loadImage(card.querySelector("img"), it.img, it.name);
+          card.onclick = () => {
+            let arr = getCollected(tab.name);
+            if (arr.includes(itemKey)) {
+              arr = arr.filter((x) => x !== itemKey);
+              card.classList.remove("collected");
+            } else {
+              arr.push(itemKey);
+              card.classList.add("collected");
+            }
+            setCollected(tab.name, arr);
+            renderTabs();
+            // 更新類型標題計數
+            const nowOwned = groups[t].filter((i) => arr.includes(t + "|" + i.name)).length;
+            divider.textContent = `${t}（${nowOwned}/${groups[t].length}）`;
+          };
+          grid.appendChild(card);
+        });
+        contentEl.appendChild(grid);
+      });
+    }
+
+    function selectTab(name) {
+      currentTab = name;
+      const tab = DATA.tabs.find((t) => t.name === name);
+      renderTabs();
+      renderCards(tab);
+      const url = new URL(location.href);
+      url.searchParams.set("tab", name);
+      history.replaceState(null, "", url);
+    }
+
+    document.getElementById("resetBtn").onclick = () => {
+      if (!currentTab) return;
+      if (confirm(`確定要清除「${currentTab}」這頁的所有勾選嗎？`)) {
+        localStorage.removeItem(keyOf(currentTab));
+        selectTab(currentTab);
+      }
+    };
+
+    // ---- 啟動 ----
+    fetch("data.json")
+      .then((r) => r.json())
+      .then((data) => {
+        DATA = data;
+        document.title = data.siteTitle || "收藏圖鑑";
+        document.querySelector(".top-bar").textContent = data.siteTitle || "收藏圖鑑";
+        document.getElementById("siteTitle").textContent = data.siteTitle || "";
+        document.getElementById("subtitle").textContent = data.subtitle || "";
+        if (data.logo) loadImage(document.getElementById("logo"), data.logo, "logo");
+        statusEl.style.display = "none";
+
+        const wanted = new URL(location.href).searchParams.get("tab");
+        const first = (wanted && data.tabs.some((t) => t.name === wanted)) ? wanted : data.tabs[0].name;
+        selectTab(first);
+      })
+      .catch((err) => {
+        statusEl.textContent = "讀取 data.json 失敗。請透過 GitHub Pages 或本機伺服器開啟（直接雙擊檔案不行）。";
+        console.error(err);
+      });
+  </script>
+</body>
+</html>

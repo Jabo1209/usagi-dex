@@ -1,0 +1,7 @@
+# 系統/暫存
+Thumbs.db
+.DS_Store
+*.log
+_*.raw
+_*.py
+_test.*
