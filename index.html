@@ -129,6 +129,24 @@
     let DATA = null;
     let currentTab = null;
 
+    // 分類 → 網址錨點英文 slug。新增分類想要好看網址就在此補一行；
+    // 沒補的分類會自動用 "t<序號>"（例如 t5），功能不受影響。
+    const TYPE_SLUGS = {
+      "吊飾娃": "charm-doll",
+      "吊飾":   "charm",
+      "娃":     "doll",
+      "其他":   "other",
+      "扭蛋":   "gacha",
+      "景品":   "prize",
+      "地區":   "region",
+      "台":     "taiwan",
+      "韓":     "korea",
+      "港":     "hongkong",
+      "陸":     "china",
+      "鐵牌":   "metal-tag",
+    };
+    const typeSlug = (t, i) => TYPE_SLUGS[t] || ("t" + i);
+
     // ---- 收藏狀態（存在瀏覽器 localStorage）----
     const keyOf = (tab) => "dex_collected_" + tab;
     const getCollected = (tab) => JSON.parse(localStorage.getItem(keyOf(tab)) || "[]");
@@ -166,6 +184,9 @@
     // ---- 渲染角色分頁列 ----
     function renderTabs() {
       tabsEl.innerHTML = "";
+      // 只有一個角色時不顯示分頁列；日後有第二個角色會自動出現
+      if (DATA.tabs.length <= 1) { tabsEl.style.display = "none"; return; }
+      tabsEl.style.display = "flex";
       DATA.tabs.forEach((tab) => {
         const total = tab.items.length;
         const owned = getCollected(tab.name).length;
@@ -199,19 +220,19 @@
 
       // 類型快速跳轉列
       typeNavEl.innerHTML = "";
-      order.forEach((t) => {
+      order.forEach((t, i) => {
         const a = document.createElement("a");
-        a.href = "#type-" + encodeURIComponent(t);
+        a.href = "#type-" + typeSlug(t, i);
         a.textContent = t;
         typeNavEl.appendChild(a);
       });
 
       contentEl.innerHTML = "";
-      order.forEach((t) => {
+      order.forEach((t, i) => {
         const owned = groups[t].filter((it) => collected.includes(t + "|" + it.name)).length;
         const divider = document.createElement("div");
         divider.className = "type-divider";
-        divider.id = "type-" + encodeURIComponent(t);
+        divider.id = "type-" + typeSlug(t, i);
         divider.textContent = `${t}（${owned}/${groups[t].length}）`;
         contentEl.appendChild(divider);
 
@@ -254,9 +275,12 @@
       const tab = DATA.tabs.find((t) => t.name === name);
       renderTabs();
       renderCards(tab);
-      const url = new URL(location.href);
-      url.searchParams.set("tab", name);
-      history.replaceState(null, "", url);
+      // 只有一個角色時不把 ?tab=角色名 塞進網址（避免中文網址）
+      if (DATA.tabs.length > 1) {
+        const url = new URL(location.href);
+        url.searchParams.set("tab", name);
+        history.replaceState(null, "", url);
+      }
     }
 
     document.getElementById("resetBtn").onclick = () => {
