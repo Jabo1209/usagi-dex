@@ -9,961 +9,955 @@
       "color": "#f2a7bd",
       "items": [
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "基礎小腳",
           "img": "images/usagi/0001.png",
           "size": "135x90x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "樂園迷你",
           "img": "images/usagi/0002.png",
           "size": "115x70x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "樂園毛絨",
           "img": "images/usagi/0003.png",
           "size": "145x90x70"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "圓軟小腳",
           "img": "images/usagi/0004.png",
           "size": "140x85x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "初代站姿",
           "img": "images/usagi/0005.jpg",
           "size": "135x90x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "毛絨站姿",
           "img": "images/usagi/0006.png",
           "size": "135x90x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "毛巾",
           "img": "images/usagi/0007.jpg",
           "size": "120x80x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "縐紗布",
           "img": "images/usagi/0008.png",
           "size": "85x60x130"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "揣手",
           "img": "images/usagi/0009.png",
           "size": "145x80x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "PUN",
           "img": "images/usagi/0010.png",
           "size": "135x85x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "草裙",
           "img": "images/usagi/0011.jpg",
           "size": "135x100x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "微醺",
           "img": "images/usagi/0012.png",
           "size": "130x80x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "宿醉",
           "img": "images/usagi/0013.png",
           "size": "135x80x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "初代睡衣派對",
           "img": "images/usagi/0014.png",
           "size": "140x90x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "睡衣派對",
           "img": "images/usagi/0015.png",
           "size": "130x85x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "冬季睡衣",
           "img": "images/usagi/0016.png",
           "size": "150x90x65"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "冬日圍巾",
           "img": "images/usagi/0017.jpg",
           "size": "150x105x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "出遊",
           "img": "images/usagi/0018.png",
           "size": "135x90x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "觀光",
           "img": "images/usagi/0019.png",
           "size": "150x55x80"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "樂園",
           "img": "images/usagi/0020.png",
           "size": "145x110x90"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "初代樂園",
           "img": "images/usagi/0021.jpg",
           "size": "155x100x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "雨衣",
           "img": "images/usagi/0022.png",
           "size": "140x90x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "囚人",
           "img": "images/usagi/0023.png",
           "size": "135x80x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "檢定",
           "img": "images/usagi/0024.png",
           "size": "135x85x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "魔法一代",
           "img": "images/usagi/0025.png",
           "size": "160x115x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "魔法二代",
           "img": "images/usagi/0026.png",
           "size": "180x145x70"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "黑魔法",
           "img": "images/usagi/0027.png",
           "size": "160x110x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "魔法趴趴",
           "img": "images/usagi/0028.png",
           "size": "80x60x90"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "平行時空",
           "img": "images/usagi/0029.png",
           "size": "130x85x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "來來",
           "img": "images/usagi/0030.png",
           "size": "125x90x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "餐廳",
           "img": "images/usagi/0031.png",
           "size": "130x90x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "廚師",
           "img": "images/usagi/0032.png",
           "size": "150x90x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "初代廚師",
           "img": "images/usagi/0033.jpg",
           "size": "145x85x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "送貨員",
           "img": "images/usagi/0034.png",
           "size": "135x80x65"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "5週年送貨員",
           "img": "images/usagi/0035.jpg",
           "size": "135x80x80"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "咖啡店員",
           "img": "images/usagi/0036.jpg",
           "size": "150x85x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "鯛魚燒店員",
           "img": "images/usagi/0037.png",
           "size": ""
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "拉麵店員",
           "img": "images/usagi/0038.png",
           "size": "130x80x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "麵包店員",
           "img": "images/usagi/0039.png",
           "size": "125x100x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "夾心麵包",
           "img": "images/usagi/0040.png",
           "size": "120x100x70"
         },
         {
-          "type": "吊娃",
-          "name": "麵包零錢包",
-          "img": "images/usagi/0041.png",
-          "size": "145x130x40"
-        },
-        {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "熱茶",
           "img": "images/usagi/0042.png",
           "size": "140x80x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "鮭魚卵",
           "img": "images/usagi/0043.png",
           "size": "120x70x105"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "辣咖哩",
           "img": "images/usagi/0044.png",
           "size": "150x80x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "檸檬",
           "img": "images/usagi/0045.png",
           "size": "125x85x80"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "地瓜",
           "img": "images/usagi/0046.png",
           "size": "125x85x40"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "包子",
           "img": "images/usagi/0047.png",
           "size": "60x80x65"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "鯛魚燒",
           "img": "images/usagi/0048.png",
           "size": ""
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "雞蛋糕",
           "img": "images/usagi/0049.png",
           "size": ""
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "可麗餅C賞",
           "img": "images/usagi/0050.png",
           "size": "160x105x70"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "海豚",
           "img": "images/usagi/0051.png",
           "size": "140x70x140"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "虎鯨",
           "img": "images/usagi/0052.png",
           "size": "80x90x110"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "翻車魚",
           "img": "images/usagi/0053.png",
           "size": "120x100x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "龍蝦",
           "img": "images/usagi/0054.png",
           "size": "140x80x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "森林蘑菇",
           "img": "images/usagi/0055.png",
           "size": "140x80x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "秋季限定菇",
           "img": "images/usagi/0056.jpg",
           "size": "140x110x100"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "章魚魷魚D賞",
           "img": "images/usagi/0057.png",
           "size": "H120"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "高麗菜",
           "img": "images/usagi/0058.png",
           "size": "155x155x70"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "熊貓",
           "img": "images/usagi/0059.png",
           "size": "110x85x40"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "蜜蜂",
           "img": "images/usagi/0060.png",
           "size": "80x65x90"
         },
         {
-          "type": "吊娃",
-          "name": "蜜蜂盲包娃",
-          "img": "images/usagi/0061.png",
-          "size": "H100"
-        },
-        {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "羚羊",
           "img": "images/usagi/0062.jpg",
           "size": "120x95x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "馬頭",
           "img": "images/usagi/0063.png",
           "size": "140x150x65"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "垂耳",
           "img": "images/usagi/0064.png",
           "size": "105x140x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "螢光",
           "img": "images/usagi/0065.png",
           "size": "140x85x40"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "愛心應援",
           "img": "images/usagi/0066.png",
           "size": "130x135x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "螢光棒應援",
           "img": "images/usagi/0067.png",
           "size": "130x90x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "水汪汪",
           "img": "images/usagi/0068.png",
           "size": "130x80x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "晴天娃娃",
           "img": "images/usagi/0069.png",
           "size": "120x80x70"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "泳鏡",
           "img": "images/usagi/0070.png",
           "size": "135x105x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "海盜",
           "img": "images/usagi/0071.png",
           "size": "130x80x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "沖繩",
           "img": "images/usagi/0072.png",
           "size": "130x100x45"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "Orion啤酒",
           "img": "images/usagi/0073.png",
           "size": "125x85x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "伏見稻荷",
           "img": "images/usagi/0074.png",
           "size": "140x85x70"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "犬張子",
           "img": "images/usagi/0075.png",
           "size": "120x85x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "店員",
           "img": "images/usagi/0076.png",
           "size": "130x80x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "車夫",
           "img": "images/usagi/0077.jpg",
           "size": "105x80x65"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "小樽復古風",
           "img": "images/usagi/0078.png",
           "size": "140x90x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "惡",
           "img": "images/usagi/0079.png",
           "size": "140x100x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "惡魔",
           "img": "images/usagi/0080.png",
           "size": "140x90x65"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "王子",
           "img": "images/usagi/0081.jpg",
           "size": "115x90x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "七夕",
           "img": "images/usagi/0082.png",
           "size": "120x100x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "幽靈森林",
           "img": "images/usagi/0083.png",
           "size": ""
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "萬聖節醫生",
           "img": "images/usagi/0084.png",
           "size": "110x80x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "萬聖節黑貓",
           "img": "images/usagi/0085.png",
           "size": "120x85x70"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "萬聖節吸血鬼",
           "img": "images/usagi/0086.png",
           "size": "150x80x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "萬聖節初代南瓜",
           "img": "images/usagi/0087.png",
           "size": "140x80x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "萬聖節幽靈",
           "img": "images/usagi/0088.png",
           "size": "125x95x70"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "萬聖節殭屍",
           "img": "images/usagi/0089.png",
           "size": "170x100x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "萬聖節南瓜",
           "img": "images/usagi/0090.png",
           "size": "130x100x80"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "聖誕老人",
           "img": "images/usagi/0091.jpg",
           "size": "145x80x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "聖誕烤雞",
           "img": "images/usagi/0092.png",
           "size": "140x80x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "聖誕襪",
           "img": "images/usagi/0093.jpg",
           "size": "150x100x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "聖誕薑餅",
           "img": "images/usagi/0094.jpg",
           "size": "140x90x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "聖誕史多倫",
           "img": "images/usagi/0095.png",
           "size": "90x110x100"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "聖誕天使",
           "img": "images/usagi/0096.png",
           "size": "105x130x65"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "2024聖誕D賞",
           "img": "images/usagi/0097.png",
           "size": "120x100x75"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "2024聖誕E賞",
           "img": "images/usagi/0098.png",
           "size": "120x100x75"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "2025聖誕E賞",
           "img": "images/usagi/0099.png",
           "size": "140x90x90"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "鏡餅",
           "img": "images/usagi/0100.png",
           "size": "145x80x70"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "注連繩三小隻",
           "img": "images/usagi/0101.png",
           "size": "190x150x85"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "襁褓",
           "img": "images/usagi/0102.png",
           "size": "110x70x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "星星包巾",
           "img": "images/usagi/0103.png",
           "size": "145x145x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "寶寶",
           "img": "images/usagi/0104.png",
           "size": "105x80x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "寶寶搪膠",
           "img": "images/usagi/0105.png",
           "size": "94x89x68"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "寶寶馬桶",
           "img": "images/usagi/0106.png",
           "size": "120x90x80"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "寶寶E賞",
           "img": "images/usagi/0107.png",
           "size": "105x100x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "教母",
           "img": "images/usagi/0108.jpg",
           "size": "120x95x40"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "打火機",
           "img": "images/usagi/0109.png",
           "size": "175x90x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "節分",
           "img": "images/usagi/0110.png",
           "size": "135x115x90"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "復活節",
           "img": "images/usagi/0111.png",
           "size": "130x90x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "鯉魚旗",
           "img": "images/usagi/0112.png",
           "size": "115x80x75"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "狸貓C賞",
           "img": "images/usagi/0113.png",
           "size": "105x90x70"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "許願星星",
           "img": "images/usagi/0114.jpg",
           "size": "120x110x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "打西瓜",
           "img": "images/usagi/0115.png",
           "size": "140x90x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "流星",
           "img": "images/usagi/0116.png",
           "size": "150x100x70"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "日本代表隊",
           "img": "images/usagi/0117.png",
           "size": "140x90x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "足球",
           "img": "images/usagi/0118.png",
           "size": "125x90x45"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "讀賣巨人隊",
           "img": "images/usagi/0119.jpg",
           "size": "125x80x40"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "道奇隊",
           "img": "images/usagi/0120.png",
           "size": "150x90x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "小熊隊",
           "img": "images/usagi/0121.png",
           "size": "135x80x55"
         },
         {
-          "type": "吊娃",
-          "name": "趴趴",
-          "img": "images/usagi/0122.png",
-          "size": "50x60x80"
-        },
-        {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "腕枕趴趴",
           "img": "images/usagi/0123.jpg",
           "size": "140x100x140"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "毛絨趴趴",
           "img": "images/usagi/0124.jpg",
           "size": "95x90x80"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "毛絨討伐失敗",
           "img": "images/usagi/0125.jpg",
           "size": "80x100x120"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "D賞可麗露",
           "img": "images/usagi/0126.png",
           "size": "150x100x100"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "D賞剪刀",
           "img": "images/usagi/0127.png",
           "size": "150x90x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "D賞橡果",
           "img": "images/usagi/0128.png",
           "size": "150x90x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "D賞麵包",
           "img": "images/usagi/0129.png",
           "size": "150x90x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "2023一番賞D賞",
           "img": "images/usagi/0130.png",
           "size": "180x175"
         },
         {
-          "type": "吊娃",
-          "name": "娃娃鑰匙套",
-          "img": "images/usagi/0131.png",
-          "size": "140x90x50"
-        },
-        {
-          "type": "吊娃",
-          "name": "尾巴",
-          "img": "images/usagi/0132.png",
-          "size": "170x110x110"
-        },
-        {
-          "type": "吊娃",
-          "name": "樂園娃頭套",
-          "img": "images/usagi/0133.png",
-          "size": "110x110x25"
-        },
-        {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "兔皮熊",
           "img": "images/usagi/0134.jpg",
           "size": "125x75x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "熊皮",
           "img": "images/usagi/0135.png",
           "size": "105x80x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "毛絨熊皮",
           "img": "images/usagi/0136.jpg",
           "size": "120x100x70"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "米其林",
           "img": "images/usagi/0137.png",
           "size": "130x80x65"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "恐龍",
           "img": "images/usagi/0138.png",
           "size": "100x90x90"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "馬來",
           "img": "images/usagi/0139.png",
           "size": "110x80x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "手遊野餐",
           "img": "images/usagi/0140.png",
           "size": "130x95x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "手遊江戶",
           "img": "images/usagi/0141.png",
           "size": "130x110x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "手遊水果",
           "img": "images/usagi/0142.png",
           "size": "130x110x115"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "2026唐吉訶德聯名",
           "img": "images/usagi/0143.png",
           "size": "H110"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "唐吉訶德豹紋睡衣",
           "img": "images/usagi/0144.png",
           "size": "H110"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "9090聯名",
           "img": "images/usagi/0145.png",
           "size": "140x90x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "泰迪熊搪膠聯名",
           "img": "images/usagi/0146.png",
           "size": "140x115x75"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "Sanrio初代 布丁狗",
           "img": "images/usagi/0147.png",
           "size": "140x100x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "Sanrio 二代布丁狗",
           "img": "images/usagi/0148.png",
           "size": "140x90x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "Sanrio 三代布丁狗",
           "img": "images/usagi/0149.png",
           "size": "110x110x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "Sanrio 四代布丁狗",
           "img": "images/usagi/0150.png",
           "size": "120x120x60"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "Sanrio 搪膠",
           "img": "images/usagi/0151.png",
           "size": "140x115x75"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "我的英雄學院 轟焦凍",
           "img": "images/usagi/0152.png",
           "size": "135x80x55"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "東京卍復仇者",
           "img": "images/usagi/0153.png",
           "size": "H130"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "阪急電車",
           "img": "images/usagi/0154.jpg",
           "size": "120x90x50"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "紅溫",
           "img": "images/usagi/0155.jpg",
           "size": "130x80x55"
         },
         {
-          "type": "吊娃",
-          "name": "不一樣表情",
-          "img": "images/usagi/0156.png",
-          "size": "100x80x35"
-        },
-        {
-          "type": "吊娃",
-          "name": "熊皮鈴鐺吊飾",
-          "img": "images/usagi/0157.png",
-          "size": "50x65x30"
-        },
-        {
-          "type": "吊娃",
-          "name": "基礎鈴鐺吊飾",
-          "img": "images/usagi/0158.png",
-          "size": "60x80x25"
-        },
-        {
-          "type": "吊娃",
+          "type": "吊飾娃",
           "name": "草地環保袋娃",
           "img": "images/usagi/0159.jpg",
           "size": "115x90x100"
         },
         {
-          "type": "吊娃",
+          "type": "吊飾",
+          "name": "娃娃鑰匙套",
+          "img": "images/usagi/0131.png",
+          "size": "140x90x50"
+        },
+        {
+          "type": "吊飾",
+          "name": "尾巴",
+          "img": "images/usagi/0132.png",
+          "size": "170x110x110"
+        },
+        {
+          "type": "吊飾",
+          "name": "樂園娃頭套",
+          "img": "images/usagi/0133.png",
+          "size": "110x110x25"
+        },
+        {
+          "type": "吊飾",
+          "name": "不一樣表情",
+          "img": "images/usagi/0156.png",
+          "size": "100x80x35"
+        },
+        {
+          "type": "吊飾",
+          "name": "熊皮鈴鐺吊飾",
+          "img": "images/usagi/0157.png",
+          "size": "50x65x30"
+        },
+        {
+          "type": "吊飾",
+          "name": "基礎鈴鐺吊飾",
+          "img": "images/usagi/0158.png",
+          "size": "60x80x25"
+        },
+        {
+          "type": "娃",
+          "name": "蜜蜂盲包娃",
+          "img": "images/usagi/0061.png",
+          "size": "H100"
+        },
+        {
+          "type": "娃",
+          "name": "趴趴",
+          "img": "images/usagi/0122.png",
+          "size": "50x60x80"
+        },
+        {
+          "type": "娃",
           "name": "大頭環保袋娃",
           "img": "images/usagi/0160.jpg",
           "size": "125x110x55"
@@ -1615,6 +1609,12 @@
           "name": "2023一番賞B賞",
           "img": "images/usagi/0268.png",
           "size": "370x320x420"
+        },
+        {
+          "type": "其他",
+          "name": "麵包零錢包",
+          "img": "images/usagi/0041.png",
+          "size": "145x130x40"
         },
         {
           "type": "其他",
