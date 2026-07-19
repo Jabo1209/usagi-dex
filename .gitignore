@@ -5,3 +5,7 @@ Thumbs.db
 _*.raw
 _*.py
 _test.*
+
+# 本機工具/備份（不上傳）
+admin.html
+data.json.bak
