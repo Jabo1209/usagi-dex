@@ -909,12 +909,6 @@
           "size": "115x90x100"
         },
         {
-          "type": "吊飾娃",
-          "name": "南京燙頭鴨",
-          "img": "images/usagi/0759.png",
-          "size": ""
-        },
-        {
           "type": "吊飾",
           "name": "娃娃鑰匙套",
           "img": "images/usagi/0131.png",
@@ -3666,6 +3660,12 @@
           "type": "陸",
           "name": "毛絨手提包",
           "img": "images/usagi/0609.png",
+          "size": ""
+        },
+        {
+          "type": "陸",
+          "name": "南京燙頭鴨",
+          "img": "images/usagi/0759.png",
           "size": ""
         },
         {
