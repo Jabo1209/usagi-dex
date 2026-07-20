@@ -3111,6 +3111,12 @@
           "size": "澳門"
         },
         {
+          "type": "地區",
+          "name": "雙節棍",
+          "img": "images/usagi/0769.webp",
+          "size": "香港"
+        },
+        {
           "type": "台",
           "name": "珍珠奶茶",
           "img": "images/usagi/0517.webp",
