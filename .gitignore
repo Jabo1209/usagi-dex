@@ -8,4 +8,5 @@ _test.*
 
 # 本機工具/備份（不上傳）
 admin.html
+preview.bat
 data.json.bak

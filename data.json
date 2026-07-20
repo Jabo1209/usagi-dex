@@ -1611,6 +1611,12 @@
           "size": "370x320x420"
         },
         {
+          "type": "娃",
+          "name": "711 夏日回憶一番賞 B賞",
+          "img": "images/usagi/0761.png",
+          "size": ""
+        },
+        {
           "type": "其他",
           "name": "麵包零錢包",
           "img": "images/usagi/0041.png",
@@ -3189,6 +3195,18 @@
           "size": "460x430"
         },
         {
+          "type": "台",
+          "name": "珍珠奶茶 S娃",
+          "img": "images/usagi/0765.png",
+          "size": ""
+        },
+        {
+          "type": "台",
+          "name": "珍珠奶茶 50cm",
+          "img": "images/usagi/0766.png",
+          "size": ""
+        },
+        {
           "type": "韓",
           "name": "韓服",
           "img": "images/usagi/0531.png",
@@ -3276,6 +3294,12 @@
           "type": "港",
           "name": "大頭睡衣抱枕",
           "img": "images/usagi/0545.png",
+          "size": ""
+        },
+        {
+          "type": "港",
+          "name": "旋轉木⾺",
+          "img": "images/usagi/0767.png",
           "size": ""
         },
         {
