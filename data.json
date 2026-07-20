@@ -1612,7 +1612,7 @@
         },
         {
           "type": "娃",
-          "name": "711 夏日回憶一番賞 B賞",
+          "name": "日本 711 夏日回憶一番賞 B賞",
           "img": "images/usagi/0761.webp",
           "size": ""
         },
@@ -1981,6 +1981,12 @@
           "name": "2025聖誕F賞吊飾",
           "img": "images/usagi/0328.webp",
           "size": "68x80x75"
+        },
+        {
+          "type": "其他",
+          "name": "日本 711 夏日回憶一番賞 C賞",
+          "img": "images/usagi/0770.webp",
+          "size": ""
         },
         {
           "type": "扭蛋",
