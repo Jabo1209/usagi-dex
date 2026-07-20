@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>更新紀錄</title>
+  <meta name="theme-color" content="#dac7b7" />
+  <style>
+    :root { --brand: #dac7b7; }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; width: 100%;
+      overflow-x: hidden;
+      font-family: "Segoe UI", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif;
+      background: #fdefc8; color: #333; text-align: center;
+    }
+
+    .top-bar {
+      background: var(--brand); color: #fff;
+      padding: 12px 0; position: fixed; top: 0; left: 0; width: 100%;
+      z-index: 1001; user-select: none; font-weight: bold; font-size: 16px;
+    }
+
+    .head { margin-top: 78px; }
+    h1 { margin: 0 0 4px; font-size: 18px; color: #a49393; }
+    .subtitle { margin: 0 0 14px; font-size: 12px; color: #b9adad; }
+
+    .back {
+      display: inline-block; text-decoration: none;
+      background: #fff; border: 2px solid #e5ddd5; border-radius: 20px;
+      color: #7a6a62; font-size: 13px; padding: 6px 14px; margin-bottom: 18px;
+    }
+    .back:hover { border-color: var(--brand); }
+
+    .list { max-width: 640px; margin: 0 auto; padding: 0 14px 80px; }
+
+    .entry {
+      background: #fff; border: 2px solid #eee; border-radius: 14px;
+      padding: 14px 16px; margin-bottom: 14px; text-align: left;
+    }
+    .entry .date {
+      font-size: 12px; font-weight: bold; color: #fff;
+      background: var(--brand); border-radius: 12px;
+      padding: 3px 10px; display: inline-block; margin-bottom: 8px;
+    }
+    .entry .text {
+      font-size: 14px; line-height: 1.75; color: #4a423d;
+      white-space: pre-wrap; word-break: break-word; margin: 0;
+    }
+
+    #status { margin: 50px auto; color: #999; font-size: 14px; }
+    footer { margin: 30px 0 60px; font-size: 11px; color: #ccc; }
+  </style>
+</head>
+<body>
+  <div class="top-bar">更新紀錄</div>
+
+  <div class="head">
+    <h1>更新紀錄</h1>
+    <p class="subtitle">收藏的點點滴滴 ✧</p>
+    <a class="back" href="index.html">← 回圖鑑</a>
+  </div>
+
+  <div id="status">載入中…</div>
+  <div class="list" id="list"></div>
+
+  <footer>資料與圖片皆放於本站 · GitHub Pages</footer>
+
+  <script>
+    const listEl = document.getElementById("list");
+    const statusEl = document.getElementById("status");
+
+    const esc = (s) => String(s).replace(/[&<>"']/g, (c) => (
+      { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
+    ));
+
+    function render(entries) {
+      if (!entries.length) {
+        statusEl.textContent = "還沒有任何更新紀錄。";
+        return;
+      }
+      statusEl.style.display = "none";
+      // 日期新的排前面；同日期維持原本順序
+      const sorted = entries
+        .map((e, i) => ({ e, i }))
+        .sort((a, b) => String(b.e.date || "").localeCompare(String(a.e.date || "")) || a.i - b.i)
+        .map((x) => x.e);
+
+      listEl.innerHTML = sorted.map((e) => `
+        <div class="entry">
+          <span class="date">${esc(e.date || "")}</span>
+          <p class="text">${esc(e.text || "")}</p>
+        </div>`).join("");
+    }
+
+    fetch("updates.json")
+      .then((r) => (r.ok ? r.json() : []))
+      .then((data) => render(Array.isArray(data) ? data : []))
+      .catch(() => {
+        statusEl.textContent = "還沒有任何更新紀錄。";
+      });
+  </script>
+</body>
+</html>
